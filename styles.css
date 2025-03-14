@@ -1,108 +1,96 @@
 html {
-  
-    font-size: 10px;
-  }
-  
-  body {
-    
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #333;
-    margin: 0;
-  }
+  font-size: 10px; /* Consider using a more standard approach */
+}
 
-  main {
-    background-color: eeeeee;
-    margin: 30px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
-    text-align: center;
-    box-sizing: border-box;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem; /* Adjust based on root size */
+  line-height: 1.5;
+  text-align: center; /* Center only for specific elements if necessary */
+  color: #333;
+  margin: 0;
+}
 
-  }
-  
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  
-  }
-  
-    h1 {
-      font-size: 3.5rem;
-      line-height: 1.2;
-    }
-  
-  h2 {
-    font-size: 3.25rem;
-  }
-  
-  a {
-    color: #477ca7;
-  }
-  
-  a:visited {
-    color: #74638f;
-  }
-  
+main {
+  background-color: #eeeeee; /* Add the # prefix to hex */
+  margin: 30px 0;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding: 20px; /* Added padding for a better look */
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0; /* Remove duplicate h1 styling */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ddddd8; 
+}
+
+@media (max-width: 460px) {
   #main {
-    margin: 30px 8px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color:#ddddd8; 
-  }
-  
-  @media (max-width: 460px) {
-    #main {
       margin: 0;
-    }
   }
-  
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  #img-div {
-    background-color: #ddddd8;
-    padding: 10px;
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
-  
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background-color: #ddddd8;
+  padding: 10px;
+  width: 100%;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
   #img-caption {
-    margin: 15px 0 5px 0;
+      font-size: 1.4rem; /* Adjust caption size for smaller screens */
   }
-  
-  @media (max-width: 460px) {
-    #img-caption {
-      font-size: 1.4rem;
-    }
-  }
-  
-  #headline {
-    margin: 50px 0;
-    text-align: center;
-  
-  }
-  
-  ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
-  }
-  
-  li {
-    margin: 16px 0;
-  }
-  
-  blockquote {
-    font-style: italic;
-    max-width: 545px;
-    margin: 0 auto 50px auto;
-    text-align: left;}
+}
+
+#headline {
+  margin: 50px 0;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left; /* Consider centering headlines but left-aligning lists */
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 20px auto; /* Added spacing above and below */
+  text-align: left;
+}
